@@ -10,14 +10,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
-    <link rel="manifest" href="/meta/manifest.json">
-    <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#0096ff">
-    <link rel="shortcut icon" href="/meta/favicon.ico">
+    <link rel="manifest" href="/meta/meta/manifest.json">
+    <link rel="mask-icon" href="/meta/meta/safari-pinned-tab.svg" color="#0096ff">
+    <link rel="shortcut icon" href="/meta/meta/favicon.ico">
     <meta name="msapplication-TileColor" content="#0a0a14">
     <meta name="msapplication-config" content="/meta/browserconfig.xml">
     <meta name="theme-color" content="#0a0a14">
 
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -26,8 +26,8 @@
       rel="stylesheet"
     />
 
-    <script src="./scripts.js"></script>
-    <script src="./data.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./data.js"></script>
   </head>
   <body>
 
@@ -88,6 +88,7 @@
           </button>
         </div>
       </div>
+
     </header>
 
     <main class="list">
@@ -118,22 +119,139 @@
             <div class="overlay__label">Title</div>
             <input class="overlay__input" data-search-title name="title" placeholder="Any"></input>
           </label>
+          
 
           <label class="overlay__field">
             <div class="overlay__label">Genre</div>
-            <select class="overlay__input overlay__input_select" data-search-genres name="genre"></select>
-          </label>
-
-          <label class="overlay__field">
-            <div class="overlay__label">Author</div>
-            <select class="overlay__input overlay__input_select" data-search-authors name="author">
+            <select class="overlay__input overlay__input_select" data-search-genres name="genre">
+              <option value="All genres"> All genres</option>
+              <option value="Historical-Fiction"> Historical-Fiction</option>
+              <option value="Magic"> Magic</option>
+              <option value="Business">Business</option>
+              <option value="Economics"> Economics</option>
+              <option value="Non-fiction">Non-fiction</option>
+              <option value="Business">Business</option>
+              <option value="Latin-american">Latin-american</option>
+              <option value="School"> School</option>
+              <option value="Adult">Adult</option>
+              <option value="Psychology">Psychology</option>
+              <option value="Magical-realism">Magical-realism</option>
+              <option value="Essays">Essays</option>
+              <option value="Mythology"> Mythology</option>
+              <option value="Short-stories"> Short-stories</option>
+              <option value="Reference">Memoir</option>
+              <option value="Physics"> Physics</option>
+              <option value="Humor">Humor</option>
+              <option value="Young-adult">Young-adult</option>
+              <option value="Religion">Religion</option>
+              <option value="Fiction">Fiction</option>
+              <option value="Paranormal">Paranormal</option>
+              <option value="France">France</option>
+              <option value="Animals">Animals</option>
+              <option value="20th-century">20th-century</option>
+              <option value="Poetry"> Poetry</option>
+              <option value="Thriller"> Thriller</option>
+              <option value="Russian-literature">Russian-literature</option>
+              <option value="History"> History</option>
+              <option value="Russia">Russia</option>
+              <option value="Novels">Novels</option>
+              <option value="Middle-grade">Middle-grade</option>
+              <option value="Travel">Travel</option>
+              <option value="Theatre">Theatre</option>
+              <option value="Science">Science</option>
+              <option value="Contemporary">Contemporary</option>
+              <option value="Gothic">Gothic</option>
+              <option value="Historical"> Historical</option>
+              <option value="Childrens">Childrens </option>
+              <option value="Classics">Classics</option>
+              <option value="American"> American</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Christian">Christian</option>
             </select>
-          </label>
+          </label> 
+
+  <label class="overlay__field">
+   <div class="overlay__label">Author</div>
+    <select class="overlay__input overlay__input_select" data-search-authors name="author">
+      <option value="All Authors">All Author</option>
+      <option value="194e164b-9365-4358-b44a-f28a93cc528f">Steven D. Levitt</option>
+      <option value="76e8065c-fd7a-4a8b-a8ea-6105a47d0781">Stephen J. Dubner</option>
+      <option value="6b092ae7-283c-45db-80f1-f0cc7e0d4921">Bill Bryson</option>
+      <option value="6dfb0a04-7ea0-4b79-887c-db759515e113">Daniel Kahneman</option>
+      <option value="76749e00-8dee-4f53-892e-ae5f17374aa2">Randy Pausch</option>
+      <option value="5abb0ae3-e351-4388-9d39-256a1a889bfc">Jeffrey Zaslow</option>
+      <option value="510406cd-14a8-4ddc-bd44-03e2fb50a96c">Michael Lewis</option>
+      <option value="3b61c145-e08f-4867-a264-ad1de070adb1">Doris Kearns Goodwin</option>
+      <option value="a4f9948b-267b-4cf7-8c89-268278b672bb">Alan Weisman</option>
+      <option value="d0533241-7f5f-41dd-8a72-93096416bd87">Mark Kurlansky</option>
+      <option value="6ae84116-6bcc-4d21-b345-d2529d5675f1">Susan Cain</option>
+      <option value="8d85a4e1-547a-4613-a192-84fb976314ac">Anne Frank</option>
+      <option value="5a65eea5-590b-4a2b-89bf-73a5db89384e">Eleanor Roosevelt</option>
+      <option value="86b2fc20-4d40-4eec-9501-d511f9000424">Susan Massotty</option>
+      <option value="d0dbf97c-298d-4c3f-8448-52bd5fd20986">Henry David Thoreau</option>
+      <option value="701f8e7e-2007-4f51-bb04-260e965c51a9">Bill McKibben</option>
+      <option value="71e84f9c-57f6-4292-9bff-5ab23f4b4ba6">Lynne Truss</option>
+      <option value="3bd29cf2-63ce-42c8-b43b-ea74ea412124">Carl Sagan</option>
+      <option value="41ed9a23-20ed-45da-87cb-1b540d3c6cbf">Oliver Sacks</option>
+      <option value="Stephen King">Stephen King</option>
+      <option value="Stephen Hawking">Stephen Hawking</option>
+      <option value="Viktor E. Frankl">Viktor E. Frankl</option>
+      <option value="Harold S. Kushner">Harold S. Kushner</option>
+      <option value="William J. Winslade">William J. Winslade</option>
+      <option value="Eric Schlosser">Eric Schlosser</option>
+      <option value="Malcolm Gladwell">Malcolm Gladwell</option>
+      <option value="Barry Fox">Barry Fox</option>
+      <option value="Irina Henegar">Irina Henegar</option>
+      <option value="Orson Scott Card">Orson Scott Card</option>
+      <option value="S.E. Hinton">S.E. Hinton</option>
+      <option value="Frances Hodgson Burnett">Frances Hodgson Burnett</option>
+      <option value="George R.R. Martin">George R.R. Martin</option>
+      <option value="William Goldman">William Goldman</option>
+      <option value="Khaled Hosseini">Khaled Hosseini</option>
+      <option value="Ray Bradbury">Ray Bradbury</option>
+      <option value="Audrey Niffenegger">Audrey Niffenegger</option>
+      <option value="Gabriel García Márquez">Gabriel García Márquez</option>
+      <option value="Gregory Rabassa">Gregory Rabassa</option>
+      <option value="Aldous Huxley">Aldous Huxley</option>
+      <option value="J.D. Salinger">J.D. Salinger</option>
+      <option value="John Steinbeck">John Steinbeck</option>
+      <option value="Bram Stoker">Bram Stoker</option>
+      <option value="Rubén Toledo">Rubén Toledo</option>
+      <option value="Nina Auerbach">Nina Auerbach</option>
+      <option value="E.B. White">E.B. White</option>
+      <option value="Garth Williams">Garth Williams</option>
+      <option value="Rosemary Wells">Rosemary Wells</option>
+      <option value="William Shakespeare">William Shakespeare</option>
+      <option value="William Golding">William Golding</option>
+      <option value="Fyodor Dostoevsky">Fyodor Dostoevsky</option>
+      <option value="David McDuff">David McDuff</option>
+      <option value="Joseph Frank">Joseph Frank</option>
+      <option value="Rick Riordan">Rick Riordan</option>
+      <option value="Victor Hugo">Victor Hugo</option>
+      <option value="Norman MacAfee">Norman MacAfee</option>
+   </select>
+        
+
         </form>
 
         <div class="overlay__row">
           <button class="overlay__button" data-search-cancel>Cancel</button>
-          <button class="overlay__button overlay__button_primary" type="submit" form="search">Search</button>
+         <!-- <input type="text" id="search-input" placeholder="Search...">-->
+          <!--button class="overlay__button" data-search-cancel>Search-->
+          <button class="overlay__button"  data-searchable>Search</button>
+
+          </button>
+         <!-- <button class="overlay__button overlay__button_primary" type="submit" form="search">Search</button>>-->
+       <!--<form>
+          <input type="text" id="search-input" placeholder="Search...">
+          <button type="submit" id="search-button">Search</button>
+        </form> -->
+      </div>
+
+      
+
+        
+
         </div>
       </div>
     </dialog>
@@ -144,19 +262,26 @@
           <label class="overlay__field">
             <div class="overlay__label">Theme</div>
 
-            <select class="overlay__input overlay__input_select" data-settings-theme name="theme">
-              <option value="day">Day</option>
+            <select class="overlay__input overlay__input_select" data-settings-theme name="theme" id="Theme">
               <option value="night">Night</option>
+              <option value="day">Day</option>
             </select>
           </label>
+          
         </form>
 
         <div class="overlay__row">
-          <button class="overlay__button" data-settings-cancel>Cancel</button>
-          <button class="overlay__button overlay__button_primary" type="submit" form="settings">Save</button>
+          <button class="overlay__button" data-settings-cancel>Save</button>
+          <button class="overlay__button overlay__button_primary " type="submit" form="settings">Cancel</button>
         </div>
       </div>
     </dialog>
+    
+    <div class="list">
+      <ul class="list__items">
+       <!--${pageBooks.map(book => `<li>${book}</li>`).join('')}-->
+      </ul>
+    </div> 
     
     <div class="backdrop"></div>
   </body>
